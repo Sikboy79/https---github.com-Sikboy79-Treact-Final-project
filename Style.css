@@ -44,6 +44,7 @@ img {
 button {
     cursor: pointer;
 }
+
 .container {
     height: 100%;
 }
@@ -538,5 +539,21 @@ VALUES
 
 .section__para {
     text-align: left;
+}
 
+/*
+
+PRICING 
+
+*/
+
+.plan__stripe {
+    
+}
+.pricing__section__tag  {
+    text-align: center;
+    font-size: 16px;
+    color: #6415ff;
+    text-transform: uppercase;
+    font-weight: 700;
 }
