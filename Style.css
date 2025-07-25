@@ -478,10 +478,6 @@ VALUES
     margin: 16px 0 32px;
 }
 
-.value {
-    
-}
-
 .value__img--wrapper {
     border-radius: 12px;
     height: 24px;
@@ -547,13 +543,169 @@ PRICING
 
 */
 
-.plan__stripe {
+.plan {
     
 }
+
+.plan__top {
+    padding: 32px;
+}
+
+.plan__stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient( 115deg, rgb(56, 178, 172)0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__name {
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #1a202c;
+    font-weight: 600;
+    text-align: center;
+}
+
+.plan__price {
+    color: #1a202c;
+    margin: 4px 0;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.plan__duration {
+    color: #A0AEC0;
+    text-align: center;
+}
+
+.plan__target {
+    color: #1a202c;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.plan__feature {
+    color: #718096;
+    font-size: 16px;
+    margin: 20px 0 0;
+    text-align: center;
+}
+
+.plan__btn--1 {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient( 115deg, rgb(56, 178, 172)0%, rgb(129, 230, 217) 100%);;
+    border: none;
+    font-weight: bold;
+    padding: 12px 32px;
+    border-width: initial;
+    border-image: initial;
+    border-radius: 500px;
+    padding: 10px 32px;
+    margin: 32px 0 0;
+    transition: all 300ms;
+}
+
+.plan__btn--2 {
+    font-size: 14px;
+    color: #6415ff;
+    background: white;
+    border: none;
+    font-weight: bold;
+    padding: 12px 32px;
+    border-width: initial;
+    border-image: initial;
+    border-radius: 500px;
+    padding: 10px 32px;
+    margin: 32px 0 0;
+    transition: all 300ms;
+}
+
+.plan__btn--3 {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(115deg, rgb(245, 101, 101)0%, rgb(254, 178, 178)100%);
+    border: none;
+    font-weight: bold;
+    padding: 12px 32px;
+    border-width: initial;
+    border-image: initial;
+    border-radius: 500px;
+    padding: 10px 32px;
+    margin: 32px 0 0;
+    transition: all 300ms;
+}
+
+.plan__bottom {
+    padding: 32px 64px;
+}
+
+.plan__top--middle {
+    background-color: #1e1ef0dc;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding: 32px;
+}
+
+.plan__name--middle {
+    font-size: 20px; 
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.plan__price--middle {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.plan__duration--middle {
+    color: white;
+    text-align: center;
+}
+
+.plan__middle--middle {
+    background-color: #1e1ef0dc;
+}
+
+.plan__target--middle {
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.plan__feature--middle {
+    color: white;
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+.plan__bottom--middle {
+    background-color: #1e1ef0dc;
+    padding: 32px 64px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
 .pricing__section__tag  {
     text-align: center;
     font-size: 16px;
     color: #6415ff;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.plans {
+    display: flex;
+    
+    width: 100%;
+    position: relative;
+    z-index: 100;
 }
