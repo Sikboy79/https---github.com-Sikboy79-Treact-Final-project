@@ -325,7 +325,6 @@ FEATURES
 
 .features__section__title {
     font-size: 48Px;
-    font-weight: 900;
     margin: 16px 0;
     line-height: 1.25;
     text-align: center;
@@ -788,6 +787,8 @@ PRICING
     color: #6415ff;
     text-transform: uppercase;
     font-weight: 700;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 /*
@@ -796,6 +797,115 @@ TESTIMONIALS
 
 */
 
+.testimonial__row {
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 96px;
+}
+
+.section__tag--testimonials {
+    text-align: left;
+    font-size: 16px;
+    color: rgb(100, 21, 255);
+    letter-spacing: 1.6px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-left: 10%;
+}
+
+.testimonials__description {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: calc(100% - 41.667%);
+}
+
+.section__title--testimonials {
+    color: #243e63;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: left;
+    margin: 16px, 0px, 24px;
+    padding-top: 5%;
+}
+
+.testimonial__rating {
+    text-align: left;
+    padding-left: 10%;
+}
+
+.testimonial__para  {
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+.section__para--testimonial {
+    color: #7c8ba1;
+    text-align: left;
+    padding: 10%;
+}
+
+.testimonial__title {
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
 .testimonial__img {
-    
+    width: 50%;
+}
+
+.testimonial__profile {
+    padding-left: 10%;
+}
+
+.testimonial__name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.testimonial__role {
+    color: #7c8ba1;
+}
+
+.testimonial__profile {
+    display: flex;
+    align-items: center;
+}
+
+.testimonial__profile--img {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.testimonial__buttons {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+}
+
+.testimonial__button {
+    align-items: center;
+    padding: 16px;
+    background: #edf2f7;
+    border-color: #edf2f7;
+    border-radius: 50%;
+    margin: 0 12px;
+    transition: all 300ms;
+}
+
+.testimonial__bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+.testimonial__details {
+    text-align: center;
+    padding: 24px;
 }
