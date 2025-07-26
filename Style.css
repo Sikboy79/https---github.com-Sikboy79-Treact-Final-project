@@ -349,7 +349,7 @@ FEATURES
     margin: 0 auto;
 }
 
-/* 
+    /* 
 
 QUALITY 
 
@@ -785,7 +785,6 @@ PRICING
     text-align: center;
     font-size: 16px;
     color: #6415ff;
-    text-transform: uppercase;
     font-weight: 700;
     padding-top: 96px;
     padding-bottom: 96px;
@@ -815,7 +814,6 @@ TESTIMONIALS
     color: rgb(100, 21, 255);
     letter-spacing: 1.6px;
     font-weight: 700;
-    text-transform: uppercase;
     padding-left: 10%;
 }
 
@@ -831,7 +829,6 @@ TESTIMONIALS
     font-size: 42px;
     font-weight: bold;
     text-align: left;
-    margin: 16px, 0px, 24px;
     padding-top: 5%;
 }
 
@@ -908,4 +905,136 @@ TESTIMONIALS
 .testimonial__details {
     text-align: center;
     padding: 24px;
+}
+
+/*
+
+START
+
+*/
+
+.start__container {
+    display: flex;
+    background-color: rgb(100, 21, 255);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 30vh;
+    border-radius: 8px;
+}
+
+.start__title {
+    color: #edf2f7;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 24px;
+}
+
+.start__button--1 {
+    font-size: 14px;
+    color: white;
+    background: linear-gradient(115deg, rgb(245, 101, 101)0%, rgb(254, 178, 178)100%);
+    border: none;
+    font-weight: bold;
+    padding: 12px 32px;
+    border-width: initial;
+    border-image: initial;
+    border-radius: 500px;
+    padding: 10px, 32px;
+    margin: 32px, 0px, 32px;
+    transition: all 300ms;
+}
+
+.start__button--2 {
+    font-size: 14px;
+    color: white;
+    background: linear-gradient(115deg, rgb(134, 103, 237)0%, rgb(80, 215, 222)100%);
+    border: none;
+    font-weight: bold;
+    padding: 12px 32px;
+    border-width: initial;
+    border-image: initial;
+    border-radius: 500px;
+    padding: 10px, 32px;
+    margin: 32px, 0px, 32px;
+    transition: all 300ms;
+}
+
+.start__buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*
+
+FOOTER
+
+*/
+
+.footer__columns {
+    display: flex;
+    background-color: rgb(100, 21, 255);
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: left;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    height: 30vh;
+    border-bottom: #8d8c8e;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+.main__links {
+    color: white;
+    padding: 24px 0px;
+}
+
+.main__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.footer__nav__link {
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.footer__bottom {
+    width: 100%;
+    max-width: 1300px;
+    background-color: rgb(100, 21, 255);
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    padding: 20px 5px;
+}
+
+.footer__logo {
+    display: flex;
+}
+
+.treact__logo--img {
+    width: 24px;
+    height: 24px;
+}
+
+.treact__logo--text {
+    color: rgb(250, 249, 251);
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+}
+
+.footer__copywright {
+    color: rgb(250, 249, 251);
+}
+
+.footer__socials {
+    color: rgb(250, 249, 251);
 }
