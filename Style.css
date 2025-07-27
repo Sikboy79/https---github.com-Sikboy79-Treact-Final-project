@@ -241,8 +241,9 @@ HEADER
     color: rgb(36, 62, 99);
     font-size: 16px;
     font-weight: 500;
-    z-index: 1;
-    transition: border-color 300ms;
+    z-index: .9;
+    transition: border 300ms ease;
+    
 }
 
 .header__customers {
