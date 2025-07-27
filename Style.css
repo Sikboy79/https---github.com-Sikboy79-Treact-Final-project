@@ -105,8 +105,11 @@ button {
 
 .nav__row {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    margin: 0 auto;
     width: 100%;
+    max-width: 1200px;
 }
 
 .nav__link--primary {
@@ -1028,7 +1031,7 @@ FOOTER
     color: rgb(250, 249, 251);
     justify-content: center;
     align-items: center;
-    padding-top: 4px;
+    padding: 4px;
 }
 
 .footer__copywright {
@@ -1050,19 +1053,43 @@ MEDIA
         flex-direction: column;
         height: auto;
     }
+
     .container {
         padding: 80px, 0;
     }
+        
     .nav__logo {
         margin: 8px, 0px;
         padding-bottom: 4px;
     }
+
     main {
         margin-bottom: 80px;
     }
+
+    .header__description {
+        margin: 0 auto;
+    }
+
+    .feature__para {
+        padding-top: 24px;
+    }
+
+    .features {
+        width: fit-content;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .start__title {
+        padding: 0px;
+    } 
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 829px) {
     #quality .row, #values .row {
         flex-direction: column-reverse;
     }
@@ -1075,15 +1102,75 @@ MEDIA
         margin-top: 40px;
     }
 
+    .row {
+        display: block;
+    }
 }
 
 @media (max-width: 1024px) {
-    .btn__menun{
+    
+    .btn__menu{
         display: block;
     }
+
     header .row {
         flex-direction: column;
+        display: block;
+    }
+
+    .header__description {
+        margin: 0 auto;
+        width: 100%;
         align-items: center;
+        text-align: center;
+    }
+
+    .header__img--wrapper {
+        padding-left: 25%;
+        display: block;
+    }
+    
+    .section__para {
+        text-align: center;
+    }
+
+    .quality__section__para {
+        text-align: center;
+    }
+
+    .plan {
+        display: block;
+    }
+
+    .plan__wrapper {
+        margin: 24px;
+        width: fit-content;
+    }
+
+    .plan__wrapper--middle {
+        margin: 24px;
+        width: fit-content;
+    }
+
+    .plan__wrapper--bottom {
+        margin: 24px;
+        width: fit-content;
+    }
+
+    .plan__duration {
+        font-size: 32px;
+    }
+
+    .plan__duration--middle {
+        font-size: 32px;
+    }
+
+    .plan__duration--bottom {
+        font-size: 32px;
+    }
+
+    .main__links {
+        padding: 0px;
     }
     footer {
         padding: 80px, 32px;
@@ -1094,5 +1181,4 @@ MEDIA
     header .row {
         align-items: flex-end;
     }
-    
 }
