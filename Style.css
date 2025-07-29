@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
 
     Font-family:'inter', system-ui;
@@ -71,21 +72,25 @@ button {
     transition: all 300ms ease;
 }
 
-.Sign__up--btn {
-    width: 100%;
-    height: 90 vh;
+.btn__menu--svg {
+    display: none;
+}
+
+.sign__up--btn {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     padding: 10px 32px;
-    margin: 2px, 0, 0;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     line-height: 1.5;
     z-index: 2;
-    height: calc(100% - 16px);
+    height: calc(100% - 2.5vh);
     border-radius: 500px;
     border: none;
     background-color: #6415ff;
     color: #ffff;
-    font-weight: 700;
-    font-size: 24px;
+    font-weight: 500;
+    font-size: 14px;
     transition: all 300ms;
 }
 
@@ -103,42 +108,38 @@ button {
     padding: 96px 0 96px;
 }
 
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .nav__row {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    margin: 0 auto;
     width: 100%;
     max-width: 1200px;
 }
 
-.nav__link--primary {
-    margin: 0;
-    padding: 10px 32px;
-    margin-top: 2px;
-    border-radius: 9999px;
-    background: #6415ff;
-    color: #fff;
-    line-height: 1.5;
-    border: none;
-    width: auto;
-    transition: all 300ms;
-}
 
 .nav__link {
     font-size: 14px;
-    font-weight: 600;
+    font-weight: 0;
     margin: 0 24px;
-    padding: 0, 0, 2px;
+    padding: 4px;
+    letter-spacing: 035px;
+    border-bottom: 2px solid transparent;
     position: relative;
+    transition: all 300ms;
 }
 
 
 .nav__links {
     display: flex;
     align-items: center;
+    justify-content: space-evenly;
+    padding-bottom: 2px;
 }
-
 
 .nav__logo {
     display: flex;
@@ -295,7 +296,7 @@ FEATURES
 
 .feature__row {
     display: flex;
-    align-items: flex-start;
+    flex-wrap: wrap;
     padding: 32px 24px;
 }
 
@@ -469,8 +470,6 @@ VALUES
 
 */
 
-
-
 #VALUES .row {
     display: flex;
     justify-content: space-between;
@@ -554,19 +553,22 @@ PRICING
 }
 
 .plan {
-    display: flex;
-    width:calc(100%/3);
-    justify-content: space-between;
+    width: 100%;
+    max-width: 384px;
     margin: 0 auto;
-    padding: 24px;
-}
-
-.plan__wrapper {
+    padding-top: 8px;
     border-radius: 20px;
     border-width: 2px;
+    overflow: hidden;
+    z-index: 100;
     border-color: rgb(56, 178, 172);
     box-shadow: inset 2px 2px 10px rgb(56, 178, 172);
-    
+}
+
+.plans {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
 }
 
 .plan__wrapper--middle {
@@ -580,16 +582,9 @@ PRICING
 .plan__wrapper--bottom {
     border-radius: 20px;
     border-width: 2px;
+    background-color: white;
     border-color: rgb(245, 101, 101);
     box-shadow: inset 2px 2px 10px rgb(245, 101, 101);
-}
-
-.plans {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    z-index: 100;
 }
 
 .plan__top {
@@ -599,17 +594,6 @@ PRICING
     border-bottom-color: #cad2dc;
 }
 
-/*
-.plan__stripe {
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 8px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    background: linear-gradient( 115deg, rgb(56, 178, 172)0%, rgb(129, 230, 217) 100%);
-}
-*/
 
 .plan__name {
     text-transform: capitalize;
@@ -787,6 +771,7 @@ PRICING
 
 .pricing__section__tag  {
     text-align: center;
+    justify-content: space-between;
     font-size: 16px;
     color: #6415ff;
     font-weight: 700;
@@ -1106,6 +1091,14 @@ MEDIA
     .row {
         display: block;
     }
+
+    .feature__title {
+        margin-bottom: 20px;
+    }
+
+    .feature__para {
+        text-align: center;
+    }
 }
 
 @media (max-width: 1024px) {
@@ -1176,10 +1169,29 @@ MEDIA
     footer {
         padding: 80px, 32px;
     }
+    .nav__links {
+        display: none;
+    }
+    .btn__menu--svg {
+        display: all;
+    }
+
 }
 
 @media (max-width: 1280px) {
-    header .row {
-        align-items: flex-end;
+   
+    .row {
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
     }
-}
+
+    .nav__row {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn__menu--svg {
+        display: none;
+    }
+    
