@@ -482,8 +482,9 @@ STEPS
 .step__description {
     display: flex;
     flex-direction: column;
-    padding: 0 0 16px 64px;
+    margin-left: 24px;
     text-align: left;
+    max-width: 320px;
 }
 
 .steps__description {
@@ -675,14 +676,15 @@ PRICING
 }
 
 .plan__btn--1 {
+    width: 100%;
+    height: 50px;
+    line-height: 1.5;
     font-size: 14px;
     color: rgb(255, 255, 255);
     background: linear-gradient( 115deg, rgb(56, 178, 172)0%, rgb(129, 230, 217) 100%);;
     border: none;
     font-weight: bold;
     padding: 12px 32px;
-    border-width: initial;
-    border-image: initial;
     border-radius: 500px;
     padding: 10px 32px;
     margin: 32px 0 32px;
@@ -690,14 +692,15 @@ PRICING
 }
 
 .plan__btn--2 {
+    width: 100%;
+    height: 50px;
+    line-height: 1.5;
     font-size: 14px;
     color: #6415ff;
     background: white;
     border: none;
     font-weight: bold;
     padding: 12px 32px;
-    border-width: initial;
-    border-image: initial;
     border-radius: 500px;
     padding: 10px 32px;
     margin: 32px 0 32px;
@@ -705,14 +708,15 @@ PRICING
 }
 
 .plan__btn--3 {
+    width: 100%;
+    height: 50px;
+    line-height: 1.5;
     font-size: 14px;
     color: rgb(255, 255, 255);
     background: linear-gradient(115deg, rgb(245, 101, 101)0%, rgb(254, 178, 178)100%);
     border: none;
     font-weight: bold;
     padding: 12px 32px;
-    border-width: initial;
-    border-image: initial;
     border-radius: 500px;
     padding: 10px 32px;
     margin: 32px 0 32px;
@@ -1054,6 +1058,7 @@ FOOTER
 
 .footer__logo {
     display: flex;
+    align-items: center;
 }
 
 .treact__logo--img {
@@ -1069,11 +1074,20 @@ FOOTER
 }
 
 .footer__copywright {
+    display: flex;
+    align-items: center;
     color: rgb(250, 249, 251);
 }
 
 .footer__socials {
+    display: flex;
+    align-items: center;
     color: rgb(250, 249, 251);
+}
+
+.footer__social--link {
+    margin: 0 0 0 16px;
+    padding: 8px;
 }
 
 /*
