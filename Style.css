@@ -70,10 +70,52 @@ figure {
 }
 
 .btn__menu {
-    display: none;
     background: transparent;
     border: none;
     transition: all 300ms ease;
+    display: none;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: #56667c;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.menu--open .menu__backdrop {
+    display: flex;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list {
+    padding: 32px 0;
+}
+
+.menu__link {
+    color: #c5cdda;
+    font-size: 48px;
+}
+
+.btn__menu--close {
+    font-size: 48px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+    color: white;
 }
 
 .header__email--btn {
@@ -113,10 +155,6 @@ figure {
     top: 0;
     bottom: 0;
     z-index: 1;
-}
-
-.btn__menu--svg {
-    display: none;
 }
 
 .sign__up--btn {
@@ -400,24 +438,27 @@ QUALITY
     justify-content: center;
     width: 560px;
     height: auto;
-    z-index: 1;
     border: solid 1px;
     border-color: #e9edf3;
     border-radius: 10px;
+    z-index: 1;
+}
+
+.quality__img--wrapper {
+    position: relative;
 }
 
 .quality__grid {
     transform: translateX(50%) translateY(50%) scaleX(1)
     scaleY(1);
+    position: absolute;
     width: 80px;
     height: 80px;
     right: 0px;
     bottom: 0px;
     fill: rgb(100, 21, 255);
-    --tw-text-opacity: 1;
-    color: rgba(100, 21, 255, var(--tw-text-opacity));
-    z-index: 0;
     display: block;
+    z-index: -1;
 }
 
 /*
@@ -1017,16 +1058,19 @@ FOOTER
 .footer__columns {
     display: flex;
     background-color: rgb(100, 21, 255);
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     text-align: left;
     margin: 0 auto;
     width: 100%;
-    max-width: 1280px;
     height: 30vh;
     border-bottom: #8d8c8e;
     border-bottom-style: solid;
     border-width: 2px;
+}
+
+.footer__column {
+    margin: 12px 96px
 }
 
 .main__links {
@@ -1049,10 +1093,9 @@ FOOTER
 
 .footer__bottom {
     width: 100%;
-    max-width: 1280px;
     background-color: rgb(100, 21, 255);
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 0 auto;
     padding: 20px 5px;
 }
@@ -1060,6 +1103,7 @@ FOOTER
 .footer__logo {
     display: flex;
     align-items: center;
+    margin-right: 96px;
 }
 
 .treact__logo--img {
@@ -1078,12 +1122,14 @@ FOOTER
     display: flex;
     align-items: center;
     color: rgb(250, 249, 251);
+    margin: 0px 200px;
 }
 
 .footer__socials {
     display: flex;
     align-items: center;
     color: rgb(250, 249, 251);
+    margin-left: 96px;
 }
 
 .footer__social--link {
@@ -1148,6 +1194,13 @@ MEDIA
         display: block;
     }
 
+    .start__button--1 {
+        margin: 0;
+    }
+
+    .start__button--2 {
+        margin: 0;
+    }
     .start__title {
         padding: 0px;
     } 
@@ -1170,7 +1223,10 @@ MEDIA
     #pricing .row {
         margin-top: 40px;
     }
-
+    
+    .quality__description {
+        margin-bottom: 24px;
+    }
     .row {
         display: block;
     }
@@ -1194,6 +1250,10 @@ MEDIA
     .start__buttons {
         margin: 0 auto;
         justify-content: center;
+    }
+
+    .footer__column {
+        margin: 12px 12px;
     }
 }
 
@@ -1290,6 +1350,11 @@ MEDIA
         width: 100%;
         max-width: 512px;
     }
+
+    .footer__copywright {
+        margin: 0 0 0 0;
+
+    }
 }
 
 @media (max-width: 1280px) {
@@ -1316,6 +1381,10 @@ MEDIA
 
     .values__list {
         display: block;
+    }
+
+    .footer__column {
+        margin: 12px 12px;
     }
 }
     
